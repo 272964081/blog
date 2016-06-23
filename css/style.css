@@ -1,0 +1,175 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background: #fff;
+	color:#404040;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+a:link,a:visited{
+	/*font-size: 13px;*/
+	text-decoration: none;
+} 
+title{
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
+
+/* 页面显示区域 */
+#container{
+	width: 100%;
+	margin: 0px auto;
+	/*background-color: #ccc;*/
+}
+#header{
+	position: fixed;
+	background-color: #2c2c2c;
+	top: 0;
+	left: 0;
+	margin-bottom: 18px;
+	width: 100%;
+	padding-right: 5px;
+	box-shadow: 3px 3px 2px rgb(125,125,125);
+}
+#blogTitle{
+	float: left;
+}
+#blogTitle h1{
+	padding: 8px 12px 8px;
+	float: left;
+	color: #fff;
+	display: block;
+	font-weight: normal;
+}
+#blogTitle h1 a{
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+#navList{
+	float: left;
+	display: block;
+	position: relative;
+	margin-right: 10px;
+	list-style:none outside none;
+	left: 20px;
+}
+#navList li{
+	float: left;
+	margin-right: 12px;
+	padding: 0px 5px;
+}
+#navList li a{
+	color:#ccc;
+	font-size: 13px;
+	line-height: 38px;
+}
+#navList li:hover a{
+	color:white;
+}
+
+#blogStatus{
+	color: #08C;
+	float: right;
+	font-size: 13px;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+#blogStatus span{
+	line-height: 18px
+}
+/*内容区*/
+#pagebody{
+	padding-left: 20px;
+}
+/*侧边栏*/
+#sidebar{
+	float:left;
+	width: 250px;
+	height: 100%;
+	border-radius: 4px 4px 4px 4px;
+	background-color: #F5F5F5;
+	clear: both;
+	padding: 9px 9px 9px 5px;
+	border:1px solid #ccc;
+}
+.sideCon{
+	border-bottom: 2px dashed #ccc;
+	padding: 5px 0;
+	list-style-type: none;
+}
+/*内容栏*/
+#mainbody{
+	float: none;
+	margin-left: 290px;
+	width: auto;
+	min-height: 200px;
+	padding-right: 20px;
+}
+.day{
+	padding-bottom: 5px;
+	min-height: 50px;
+	margin:0 0 30px 0;
+}
+.dayTitle{
+	border-bottom: 1px solid #ccc;
+	text-align: right;
+	margin-bottom: 5px;
+}
+.dayTitle a,.postCon a{
+	color:#0069D6;
+}
+.postTitle{
+	margin-bottom: 5px;
+}
+.postTitle a{
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+.postCon{
+	margin:10px 0;
+}
+.con_desc{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: normal;
+	margin: 20px 0;
+}
+.postDesc{
+	float: right;
+	color: #666;
+	width: 100%;
+	font-size: 13px;
+	/*clear:both;*/
+	text-align: right;
+}
+.edit{
+	background-color: #62CFFC;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 2px;
+}
+.readmore{
+	font-size: 13px;
+}
+#footer{
+	text-align: center;
+	min-height: 15px;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
