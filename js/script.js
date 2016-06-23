@@ -1,8 +1,15 @@
 $(function(){
-	$("#blogTitle").mouseover(function(){
-		$("#blogTitle h1 a").css("text-indent","30px");
+	var ran = Math.floor(Math.random()*5+1);
+	var $pic = $('#mypic').attr({
+		'src':'img/P0'+ran+'.jpg'
 	});
-	$("#blogTitle").mouseout(function(){
-		$("#blogTitle h1 a").css("text-indent","");
+	$('#main').css({
+		'height':$(window).height()+'px',
 	});
+	$('#mypic').mouseover(function(){
+		$pic.attr('src','img/P06.png');
+	})
+	$('#mypic').mouseout(function(){
+		$pic.attr('src','img/P0'+ran+'.jpg');
+	})
 })
