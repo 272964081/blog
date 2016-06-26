@@ -6,7 +6,7 @@ function setCurrentTime(){
 	var date = new Date();
 	var year = date.getFullYear();
 	var month = date.getMonth()+1;
-	var day = date.getDay();
+	var day = date.getDate();
 	var hours = date.getHours();
 	hours = (hours<10)?('0'+hours):hours;
 	var Minutes = date.getMinutes();
