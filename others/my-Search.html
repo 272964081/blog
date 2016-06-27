@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>json跨域测试</title>
+	<style style="text/css">
+		#tips>p{
+			color:red;
+		}
+		#mytips{
+			list-style-type: none;
+			width: 200px;
+			border: 1px solid #EEE;
+		}
+		#mytips li{
+			height: 25px;
+			line-height: 25px;
+			font-weight: bold;
+			overflow-x: hidden;
+		}
+		#mytips li:hover{
+			background-color: #FDD;
+			text-decoration: underline;
+			cursor:pointer;
+		}
+	</style>
+	<script src="jq/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+	  	////
+	  	$("#text-input").on('keyup',oQuery);	  	
+	  	////
+	  	$(document).click(function(event) {
+	  		/* Act on the event */
+	  		$("#tips").hide();
+	  	});
+	  }
+
+	  //查询函数
+	  var oQuery  = function(){
+	  	var inputText =$("#text-input").val();
+	  		// console.log(inputText);
+	  	$.get("http://api.bing.com/qsonhs.aspx?q="+inputText,function(data){
+	  		var html ="";
+	  		// console.log(data);
+	  		if(data.AS.FullResults==1){
+	  			for(var i=0;i<data.AS.Results[0].Suggests.length;i++){
+	  				html+="<li>"+data.AS.Results[0].Suggests[i].Txt+"</li>";
+	  			}
+	  			$("#mytips").html(html);
+	  			$("#tips").show();
+	  				////绑定事件
+	  				$("#mytips li").each(function(index, el) {
+	  					var text = $(this).text();
+	  					$(this).click(function(event) {
+	  						/* Act on the event */
+	  						$("#text-input").val(text);
+	  						//模拟点击按钮
+	  						$("#btn-submit").click();
+	  					});
+	  				});
+	  			}
+
+	  		})	
+	  }
+	</script>
+</head>
+<body>
+	<form action="https://cn.bing.com/search" target="_blank">
+		<input type="text" id="text-input" name="q" autocomplete="off" />
+		<input type="submit" id="btn-submit">
+	</form>
+	<div id="tips" style="display:none">
+		<ul id="mytips"></ul>
+	</div>
+</body>
+</html>
