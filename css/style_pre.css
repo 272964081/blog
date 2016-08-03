@@ -59,6 +59,7 @@ body{
 	line-height: 45px;
 	text-align: justify;
 	margin: 0 10px;
+	text-align: center;
 }
 #menu li:hover{
 	background-color: #FAA;
