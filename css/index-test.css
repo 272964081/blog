@@ -57,6 +57,13 @@ a{
 	margin-top: 36px;
 	line-height: 24px;
 }
+.qq-box{
+	height: 100%;
+}
+.qq-box .qq{
+	display: block;
+	margin-top: 35px;
+}
 /*版权部分*/
 .footer{
 	height: 60px;
