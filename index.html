@@ -1,116 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的主页</title>
+	<link rel="stylesheet" href="css/index-test.css" type="text/css">
+	<script type="text/javascript" src="jq/jquery1.8.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>7-1编程挑战题</title>
-		<link rel="stylesheet" href="css/7-1style.css" type="text/css">
-		<script type="text/javascript" src="myFocus/js/myfocus-2.0.1.min.js"></script>
-		<script type="text/javascript" src="jq/jquery-1.12.4.min.js"></script>
-		<script type="text/javascript">
-			myFocus.set({
-				id:"picFocus",
-				// pattern:"mF_qiyi"
-			})
-			$(function(){
-				var num=0;
-				setInterval(function(){
-					var $newsContent = $(".sub-2").eq(0).find("a").eq(0);
-					var html = "这是一条滚动新闻，但是没有什么内容"+(num++);
-					$newsContent.slideUp(500,function(){
-						$newsContent.html(html).slideDown();
-					});
-					if(num>3){
-						num=0;
-					}
-				},3000);
-
-			})
-
-		</script>
-	</head>
-	<body>
-		<div class="wrap">
-			<div class="nav">
-				<img src="http://img.mukewang.com/53edadad0001efe202000070.jpg" alt="logo">
-				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="#">产品特点</a></li>
-					<li><a href="#">解决方案</a></li>
-					<li><a href="http://cad777.taobao.com">产品价格</a></li>
-					<li><a href="#">帮助中心</a></li>
-					<li><a href="#">关于我们</a></li>
-				</ul>
-			</div><!-- nav end -->
-			<div id="picFocus">
-				<div class="loading"><img src="http://img.mukewang.com/53edad8c000175cb00300029.jpg" alt="loading"></div>
-				<div class="pic">
-					<ul>
-						<li><a href="#"><img src="http://img.mukewang.com/53edad3e0001afad10000318.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://img.mukewang.com/53edad2c0001b61310000314.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://img.mukewang.com/53edad1600019ae910000310.jpg" alt=""></a></li>
-					</ul>
-				</div>
-				
-			</div> <!-- picFocus end -->
-			<div class="news">
-				<h2 class="sub-1">滚动新闻</h2><h2 class="sub-2"><a href="#">这是滚动新闻</a></h2>
-			</div> <!-- news end -->
-			<div class="course">
-				<div class="course-left">
-					<div class="course-title">
-						<img src="http://img.mukewang.com/53edad54000119fb03300130.jpg" alt="课程信息">
-						<h3>玩转BootStrap</h3>
-					</div>
-					<div class="news-info">
-						<div class="info-title">
-							<h3>新闻中心</h3>
-							<ul>
-								<li><a href="#"><span>1月14日</span>学习计划之web前端</a></li>
-								<li><a href="#"><span>1月14日</span>学习计划之web前端</a></li>
-								<li><a href="#"><span>1月14日</span>学习计划之web前端</a></li>
-							</ul>
-						</div>
-					</div><!--  news-info end -->
-				</div> <!-- course-left end -->
-				<div class="course-middle">
-					<div class="course-title">
-						<img src="http://img.mukewang.com/53edad690001260a03300130.jpg" alt="课程信息">
-						<h3>企业网站实战</h3>
-					</div>
-					<div class="news-info">
-						<div class="info-title">
-							<h3>热门活动</h3>
-							<img src="http://img.mukewang.com/53edacdd0001b8e804820302.jpg" alt="热门活动">
-							<a href="#">2014最惨活动征集中</a>
-							<a href="#">2014最惨活动征集中</a>
-							<a href="#">2014最惨活动征集中</a>
-						</div>
-					</div><!--  news-info end -->
-					
-				</div> <!-- course-middle end -->
-				<div class="course-right">
-					<div class="course-title">
-						<img src="http://img.mukewang.com/53edad7a0001cde803300130.jpg" alt="课程信息">
-						<h3>JavaScript基础</h3>
-					</div>
-					<div class="news-info">
-						<div class="info-title">
-							<h3>联系我们</h3>
-							<div class="myInfo">
-								<p>前端求职,重庆/成都</p>
-								<p>郎同学</p>
-								<p>电话：17076469095</p>
-								<p>E-mail:272964081@qq.com</p>
-							</div>
-						</div>
-					</div><!--  news-info end -->
-				</div> <!-- course-right end -->
-			</div> <!-- course end -->
-			<div class="copyright">
-				Copyright &copy; 2016郎军平 根本没有备案 不用去查
+</head>
+<body>
+	<div class="main">
+		
+		<div class="index-header">	
+			<div class="header-left fl">
+				<a href="https://github.com/272964081">MyGitHub</a>
 			</div>
-		</div> <!-- wrap end -->	
-	</body>
-	</html>
+			<div class="header-time fr">
+				2016.08
+			</div>
+		</div>  <!-- 头部 -->
+		<div class="content-top clearfix">
+			<div class="content-top-left fl">
+				<div class="top-left-top">
+					<img src="img/index-roll1.jpg" alt="轮播图1">
+					<div class="text-box">
+						<a href="#"><h2>学习学习，我要学习</h2></a>
+					</div>
+				</div>
+				<div class="top-left-bottom">
+					<div class="step-item fl">
+						<h2 class="s0">What</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veniam ad aspernatur, quae debitis recusandae laudantium tempore unde modi reiciendis ullam mollitia adipisci, molestias repellendus beatae dolores voluptas non pariatur.</p>
+					</div>
+					<div class="step-item fl">
+						<h2 class="s1">When</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veniam ad aspernatur, quae debitis recusandae laudantium tempore unde modi reiciendis ullam mollitia adipisci, molestias repellendus beatae dolores voluptas non pariatur.</p>
+					</div>
+					<div class="step-item fl">
+						<h2 class="s2">How</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veniam ad aspernatur, quae debitis recusandae laudantium tempore unde modi reiciendis ullam mollitia adipisci, molestias repellendus beatae dolores voluptas non pariatur.</p>
+					</div>
+				</div>
+			</div>
+			<div class="content-top-right fr">
+				<div class="des">
+					<h1>About</h1>
+					<h1>Technologe</h1>
+					<p>About technologe about technologe about technologe</p>
+				</div>
+				<div class="star">
+					<h1>700</h1>
+					<h2>3.2 <span>css</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="content-bottom clearfix">
+			<div class="content-bottom-left fl">
+				<div class="title">
+					<h1> <span>THE</span> TECHNOLOGE OF FRONT</h1>
+					<h2>前端技术领域</h2>
+				</div>
+				<p>
 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. impedit ratione aliquid eligendi officiis sunt non quibusdam! Corporis nihil alias, omnis blanditiis dicta ipsum obcaecati consequatur illum veniam laboriosam. <img src="img/img-content.jpg" alt="内容" style="float:right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nulla, dolores eligendi laudantium corporis. Minus quo voluptates, placeat aperiam enim sapiente quidem ullam repudiandae nulla est, dolores? Ratione magnam eaque atque autem voluptatum eius enim omnis eligendi eveniet temporibus laborum impedit, cumque sequi ipsum aliquam veniam modi consequuntur tenetur! Odit.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora repellat, incidunt est totam alias nam ex voluptates velit molestias doloremque odit, debitis voluptate iste hic nostrum maxime provident quia quos!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis animi ullam ut deserunt consectetur debitis perferendis aperiam ad omnis dolorem reiciendis expedita fuga ducimus harum labore 
+
+				</p>
+				
+			</div>
+			<div class="content-bottom-right clearfix">
+				<div class="bottom-right-top">
+					<embed src="http://player.youku.com/player.php/sid/XMTY2ODYyNDUxMg==/v.swf" allowFullScreen="true" quality="high" width="460" height="260" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				</div>
+				<div class="bottom-right-bottom clearfix">
+					<div class="top">
+						<ul>
+							<li><em>前端</em><a href="#"><i></i>张三李四王麻子</a><span></span></li>
+							<li><em>前端</em><a href="#"><i></i>张三李四王麻子</a><span></span></li>
+							<li><em>前端</em><a href="#"><i></i>Lorem ipsum dolor sit amet, consectetur.</a><span></span></li>
+						</ul>
+					</div>
+					<div class="bottom clearfix">
+						<div class="left fl">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, numquam.</p>		
+						</div>
+						<div class="right fr"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem magni voluptate quos, at, provident officiis explicabo quam amet accusamus saepe qui optio distinctio, commodi modi.</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="fr">&copy;this is my paper</p>
+		</div> <!-- 版权部分 -->
+		
+	</div>
+</body>
+</html>

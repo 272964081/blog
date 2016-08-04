@@ -5,9 +5,10 @@
 .main{
 	width: 900px;
 	padding: 0 40px;
-	margin: 0 auto;
+	margin: 10px auto;
 	border: 1px solid #CCC;
 	overflow: hidden;
+	background-color: #FBEEDE;
 }
 a{
 	text-decoration: none;
@@ -44,12 +45,11 @@ a{
 }
 .header-left a{
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 20px;
 	margin-top:40px;
-	text-align: left;
 	font-weight: bold;
-	text-indent: 10px;
+	text-align: center;
 }
 .header-time{
 	color: #D45C5B;
@@ -77,6 +77,30 @@ a{
 .content-top .content-top-left img{
 	width: 640px;
 	height: 300px;
+}
+.content-top .content-top-left .top-left-top{
+	position: relative;
+}
+.content-top .content-top-left .top-left-top .text-box{
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	position: absolute;
+	opacity: 0.4;
+	bottom: 3px;
+	left: 0;
+}
+.content-top .content-top-left .top-left-top .text-box:hover{
+	opacity: 0.7;
+}
+.text-box a {
+	color: #FFF;
+	line-height: 50px;
+	font-size: 14px;
+	text-indent: 20px;
+}
+.text-box a h2{
+	font-weight: normal;
 }
 .content-top .top-left-bottom{
 	margin-top: 30px;
@@ -177,6 +201,83 @@ a{
 	color: #F4E326;
 }
 .content-bottom-left p{
+	position: relative;
 	padding-top: 26px;
 	text-indent: 2em;
+	color: #767677;
+}
+.content-bottom-left p img{
+	padding: 20px;
+	padding-right: 0;
+}
+
+.bottom-right-bottom{
+	background-color: #EDECD6;
+	margin-top: 30px;
+}
+.bottom-right-bottom .top{
+	margin-bottom: 20px;
+}
+.bottom-right-bottom a{
+	color: #5A5A5A;
+	background: #EDECD6;
+	position: relative;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 50px;
+	padding-right: 10px;
+}
+.bottom-right-bottom li{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+}
+.bottom-right-bottom em{
+	float:right;
+	position: relative;
+	background: #EDECD6;
+	color: #5A5A5A;
+	font-size: 12px;
+	padding-right: 10px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.bottom-right-bottom span{
+	display: block;
+	margin-top: -15px;
+	border-bottom: 1px dotted #5A5A5A;
+}
+.bottom-right-bottom i{
+	float: left;
+	font-style: normal;
+	position: absolute;
+	bottom: 5px;
+	left: 30px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 9px solid #10446B;
+}
+.bottom-right-bottom .bottom{
+	position: relative;
+}
+.bottom-right-bottom .bottom .left{
+	width: 55%;
+	height: 160px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #D45C5B;
+	color: #FFF;
+	font-weight: bold;
+}
+.bottom-right-bottom .bottom .right{
+	width: 45%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+.bottom-right-bottom .bottom .right p{
+	padding: 10px;
 }
