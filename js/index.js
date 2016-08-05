@@ -1,8 +1,6 @@
 
 $(function(){
 	//1.更新系统时间
-	var city = returnCitySN.cname; //获取城市
-	$(".header-city").html(city);
 	upDateTimes();
 	setInterval('upDateTimes()',1000);
 	
