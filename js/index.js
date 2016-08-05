@@ -1,7 +1,11 @@
+
 $(function(){
 	//1.更新系统时间
-	 upDateTimes();
+	var city = returnCitySN.cname; //获取城市
+	$(".header-city").html(city);
+	upDateTimes();
 	setInterval('upDateTimes()',1000);
+	
 });
 
 //调用系统时间

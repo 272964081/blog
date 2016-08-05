@@ -51,11 +51,13 @@ a{
 	font-weight: bold;
 	text-align: center;
 }
-.header-time{
+.header-time,
+.header-city{
 	color: #D45C5B;
 	font-weight: bold;
 	margin-top: 36px;
 	line-height: 24px;
+	margin-left: 20px;
 }
 .qq-box{
 	height: 100%;
