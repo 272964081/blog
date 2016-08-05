@@ -2,6 +2,9 @@
 	padding: 0;
 	margin: 0;
 }
+ul{
+	list-style-type: none;
+}
 .main{
 	width: 900px;
 	padding: 0 40px;
@@ -33,6 +36,38 @@ a{
 	float: right;
 }
 
+/*滚动图组件*/
+.pic-box{
+	position: relative;
+  width: 640px;
+  height: 300px;
+  overflow: hidden;
+}
+.pic-box ul{
+	position: absolute;
+	width: 1920px;
+	height: 300px;
+	left: 0;
+
+}
+.pic-box ul li{
+	float: left;
+}
+.btn-group{
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+.btn-group a{
+	display: inline-block;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.btn-group .active{
+	background-color: #AAA;
+}
 /*头部*/
 .index-header{
 	height: 60px;
@@ -220,6 +255,10 @@ a{
 
 .bottom-right-top{
 	background-color: #FFF;
+}
+.bottom-right-top:hover{
+	opacity: 0.6;
+	filter:Alpha(opacity=60);
 }
 .bottom-right-top img{
 	padding: 2px;
