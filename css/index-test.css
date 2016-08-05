@@ -218,6 +218,14 @@ a{
 	padding-right: 0;
 }
 
+.bottom-right-top{
+	background-color: #FFF;
+}
+.bottom-right-top img{
+	padding: 2px;
+	width: 100%;
+	max-height: 300px;
+}
 .bottom-right-bottom{
 	background-color: #EDECD6;
 	margin-top: 30px;
