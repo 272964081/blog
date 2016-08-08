@@ -20,7 +20,7 @@ $(function(){
 		});
 	});
 	//3.图片自动转换
-	picRoll($boxUl,3000);
+	picRoll($boxUl,5000);
 	
 });
 
@@ -53,13 +53,17 @@ function picRoll(ele,delay){
 	 	var mleft ;
 	 	if (current==='0px') {
 	 		mleft='-640px';
+	 		$(".text-box a").html("<h2>电商网站实操链接</h2>").attr("href","../ds/index.html");
 	 		$btng.removeClass('active').eq(1).addClass('active');
 	 	}else if(current==='-640px'){
 	 		mleft='-1280px';
+	 		$(".text-box a").html("<h2>部分链接</h2>").attr("href","../ds/product.html");
 	 		$btng.removeClass('active').eq(2).addClass('active');
 	 	}else if(current==='-1280px'){
 	 		mleft='0px';
+	 		$(".text-box a").html("<h2>某次练习</h2>").attr("href","index-old.html");
 	 		$btng.removeClass('active').eq(0).addClass('active');
+
 	 	}
 	 	$box.css("left",mleft);
 		

@@ -169,6 +169,7 @@ a{
 	color: #767677;
 	font-size: 12px;
 	padding-right: 10px;
+	line-height: 25px;
 	text-indent: 2em;
 }
 /*右边部分*/
@@ -219,6 +220,10 @@ a{
 }
 .content-bottom-left{
 	width: 416px;
+}
+.content-bottom-left p{
+	line-height: 25px;
+	font-size: 12px;
 }
 .content-bottom-right{
 	margin-left: 436px;
@@ -332,6 +337,10 @@ a{
 	bottom: 0;
 
 }
-.bottom-right-bottom .bottom .right p{
+.bottom-right-bottom .bottom .right p,
+.bottom-right-bottom .bottom .left p{
 	padding: 10px;
+	font-size: 12px;
+	line-height: 18px;
+	text-indent: 15px;
 }
