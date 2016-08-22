@@ -1,0 +1,173 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.warp{
+	width: 550px;
+	height: auto;
+	margin: 50px auto;
+}
+.box{
+	border: 1px solid #EEE;
+	height: 415px;
+	width: 548px;
+	box-shadow: 0 3px 5px #000;
+}
+.main{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.left{
+	width: 80%;
+	height: 100%;
+}
+.right{
+	width: 20%;
+	height: 100%;
+	font-size: 14px;
+}
+
+.left-header{
+	height: 40px;
+	border-bottom: 1px solid #EEE;
+	padding-left: 10px;
+}
+.select-years,
+.select-month{
+	margin-top: 7px;
+	height: 25px;
+	margin-left: 20px;
+	border: 1px solid #EEE;
+}
+.select-month{
+	border-style: solid none;
+}
+.select-month select{
+	border: none;
+	outline: none;
+	width: 60px;
+	display: inline-block;
+}
+.select-month i,
+.select-month i{
+	display: inline-block;
+	float: left;
+	height: 24px;
+	width: 18px;
+	font-style: normal;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+	border: 1px solid #EEE;
+	border-style: none solid;
+	color: #AAA;
+	cursor:pointer;
+	background-color: #F5F5F5;
+}
+.select-month select{
+	float: left;
+	display: inline-block;
+}
+
+.btn-goback{
+	height: 25px;
+	width: 75px;
+	margin-top: 8px;
+	border: 1px solid #8AB5F7;
+	background-color: #91B5EC;
+	color: #FFF;
+	margin-left: 20px;
+	font-size: 12px;
+}
+#select-holiday{
+	border: 1px solid #EEE;
+	margin-left: 20px;
+	width: 95px;
+}
+#select-holiday option {
+	padding-left: 10px;
+}
+
+.left-body{
+	height: 100%;
+}
+.left-body table{
+	border: 0;
+}
+.tr-header{
+	height: 40px;
+	background-color: #F5F9FF;
+}
+.tr-header th{
+	width: 438px;
+}
+.tr-day{
+	height: 64px;
+}
+.tr-day td{
+	text-align: center;
+}
+.tr-day .is-week{
+	color: red;
+}
+.tr-day td p{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.tr-day td span{
+	font-size: 12px;
+}
+
+.mb{
+	margin-bottom: 8px;
+}
+.right .right-top,
+.right .right-bottom{
+	overflow: hidden;
+	color: #FFF;
+	height: 50%;
+}
+.right .right-top{
+	position: relative;
+	background-color: #6F9CE0;
+	text-align: center;
+}
+.right .date{
+	margin-top: 10px;
+	font-size: 16px;
+}
+.right .day{
+	height: 70px;
+	width: 70px;
+	background-color: #8CBAFF;
+	border-radius: 3px;
+	line-height: 70px;
+	position: relative;
+	left: 50%;
+	margin-left: -35px;
+	font-size: 40px;
+	font-weight: bold;
+	box-shadow: 3px 3px 3px #6690CF;
+}
+.right .right-bottom{
+	background-color: #558ADB;
+	padding: 15px;
+}
+.right .right-bottom ul{
+	list-style-type: none;
+}
+.right .right-bottom ul li{
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
