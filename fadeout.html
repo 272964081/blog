@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FadeOut</title>
+	<style>
+		.test{
+			width: 200px;
+			height: 100px;
+			background-color: #000;
+			margin: 50px auto;
+			opacity: 1;
+		}
+		button{
+			margin: 5px 50%;
+		}
+	</style>
+	<script src="jq/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#go").click(fadeout);
+			$("#reset").click(reset);
+		});
+		function fadeout(){
+			var $myDiv = $(".test").eq(0);
+			var opac = $myDiv.css('opacity');
+			setTimeout(function(){
+				opac-=0.1;
+				$myDiv.css("opacity",opac);
+				if(opac>0){
+					fadeout();
+				}
+			},200);
+		}
+
+		function reset(){
+			var $myDiv = $(".test").eq(0);
+			$myDiv.css("opacity",1);
+		}
+		
+	</script>
+</head>
+<body>
+	<div class="test"></div>
+	<button id="go">GO</button>
+	<button id="reset">RESET</button>
+</body>
+</html>
